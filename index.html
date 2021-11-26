@@ -13,8 +13,8 @@
   <main class="main">
     <p id="add-tasks">
       <label for="new-task">Add Item</label>
-      <div class="task-row-wrapper">
-        <input id="new-task"class="task" type="text">
+      <div class="add-tasks__task-row-wrapper task-row-wrapper">
+        <input id="new-task"class="add-tasks__task task" type="text">
         <button>Add</button>
       </div>
     </p>
@@ -22,31 +22,31 @@
     <ul id="incomplete-tasks">
       <li>
         <input type="checkbox">
-        <label class="task">Pay Bills</label>
-        <input type="text" class="task">
-        <button class="edit">Edit</button>
-        <button class="delete">
+        <label class="incomplete-tasks__task task">Pay Bills</label>
+        <input type="text" class="incomplete-tasks__task task">
+        <button class="incomplete-tasks__edit edit">Edit</button>
+        <button class="incomplete-tasks__delete delete">
           <img src="./remove.svg" alt="button remove">
         </button>
       </li>
       <li class="edit-mode">
         <input type="checkbox">
-        <label class="task">Go Shopping</label>
-        <input type="text" value="Go Shopping" class="task">
-        <button class="edit">Save</button>
-        <button class="delete">
+        <label class="incomplete-tasks__task task">Go Shopping</label>
+        <input type="text" value="Go Shopping" class="incomplete-tasks__task task">
+        <button class="incomplete-tasks__edit edit">Save</button>
+        <button class="incomplete-tasks__delete delete">
           <img src="./remove.svg" alt="button remove">
         </button>
       </li>
     </ul>
     <h3>Completed</h3>
     <ul id="completed-tasks">
-      <li>
+      <li class="completed-tasks__item">
         <input type="checkbox" checked>
-        <label class="task">See the Doctor</label>
-        <input type="text" class="task">
-        <button class="edit">Edit</button>
-        <button class="delete">
+        <label class="completed-tasks__task task">See the Doctor</label>
+        <input type="text" class="completed-tasks__task task">
+        <button class="completed-tasks__edit edit">Edit</button>
+        <button class="completed-tasks__delete delete">
           <img src="./remove.svg" alt="button remove">
         </button>
       </li>
